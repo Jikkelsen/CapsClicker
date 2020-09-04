@@ -98,7 +98,7 @@ return
   ;~ }else{
   ;~ }
 ;~ #IfWinActive
-CapsLock & h:: !Left
+CapsLock & h:: !up
 CapsLock & l:: Enter
 
 ; ######################################################################## Deprecated KKKKKKKKFunctions ########################################################################
