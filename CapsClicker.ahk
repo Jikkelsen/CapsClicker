@@ -10,7 +10,6 @@
 
 #SingleInstance force		; Cannot have multiple instances of program
 #MaxHotkeysPerInterval 200	; Won't crash if button held down
-;#NoTrayIcon					; App not visible in tray
 #NoEnv						; Avoids checking empty variables to see if they are environment variables
 #Persistent					; Script will stay running after auto-execute section completes 
 
@@ -25,18 +24,18 @@ Menu, tray, icon, icons\spg.png
 CapsLock & q:: !F4
 CapsLock & Escape:: ControlSend, , !{F4}, ahk_class Progman ; shutdown dialogue
 
-; Keyboard arrowkeys
+; Vimlike bindings
 CapsLock & h:: Left
 CapsLock & j:: Down
 CapsLock & k:: Up
 CapsLock & l:: Right
-
-; Vimlike bindings
 CapsLock & a:: Send {end}
 CapsLock & x:: Send {delete}
 CapsLock & i:: Send {home}
 CapsLock & u:: Send {PGUP}
 CapsLock & d:: Send {PGDN}
+Capslock & w:: Send {Ctrl Down}{Right}{Ctrl Up}
+Capslock & b:: Send {Ctrl Down}{Left}{Ctrl Up}
 
 ; Media
 CapsLock & Insert:: Media_Play_Pause
@@ -56,11 +55,6 @@ CapsLock & 6::switchDesktopByNumber(6)
 CapsLock & 7::switchDesktopByNumber(7)
 CapsLock & 8::switchDesktopByNumber(8)
 CapsLock & 9::switchDesktopByNumber(9)
-
-; Chrome f6 fix, rwin to rclick
-$F6::^l
-RWin:: AppsKey
-;CapsLock & Enter:: run, powershell.exe -noexit -command "cd $HOME\Desktop"
 
 ;Admin menu
 CapsLock & 0::
