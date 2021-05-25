@@ -25,6 +25,8 @@ This script will disable the use of `Caps Lock` key, and uses it as a 5th modifi
 `Capslock & b` → One word backwards
 
 ### Quality of life
+`Capslock & q` → Sends alt+f4 to current program. 
+
 `CapsLock & Insert` → Media "pause" key
 
 `CapsLock & Home` → Media "Next" key
